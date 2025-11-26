@@ -45,14 +45,80 @@ def load_projects() -> list[dict]:
 
 
 def format_table(rows: list[dict]) -> str:
-    header = "| نام پروژه | توضیح کوتاه | تکنولوژی | لینک |\n|-----------|------------|----------|------|"
-    lines = [header]
+    tech_overrides = {
+        "blockchain": "Blockchain",
+        "ethereum": "Ethereum",
+        "solidity": "Solidity",
+        "docker": "Docker",
+        "pytorch": "PyTorch",
+        "javascript": "JavaScript",
+        "nodejs": "Node.js",
+        "web3": "Web3",
+        "hyperledger": "Hyperledger",
+        "hyperledger-fabric": "Hyperledger Fabric",
+        "ipfs": "IPFS",
+        "json-ld": "JSON-LD",
+        "oauth2": "OAuth2",
+        "openid-connect": "OpenID Connect",
+        "mfa": "MFA",
+        "sso": "SSO",
+        "dkg": "DKG",
+        "cnn": "CNN",
+        "lstm": "LSTM",
+        "ssl": "SSL",
+        "tls": "TLS",
+        "go": "Go",
+        "rust": "Rust",
+        "java": "Java",
+        "python": "Python",
+        "react": "React",
+        "node": "Node",
+        "streamlit": "Streamlit",
+        "survey": "Survey",
+        "credentials": "Credentials",
+        "merkle": "Merkle",
+        "identity": "Identity",
+        "awesome-list": "Awesome List",
+        "hashing": "Hashing",
+        "signature": "Signature",
+        "forensics": "Forensics",
+        "dataset": "Dataset",
+        "efficientnet": "EfficientNet",
+    }
+
+    def display_tech(values: list[str] | None) -> str:
+        if not values:
+            return "—"
+        formatted = []
+        for item in values:
+            key = item.strip().lower()
+            formatted.append(tech_overrides.get(key, item))
+        return ", ".join(formatted)
+
+    headers = ["نام پروژه", "توضیح کوتاه", "تکنولوژی", "لینک"]
+    rows_matrix: list[list[str]] = []
     for entry in rows:
-        tech = ", ".join(entry.get("tech", [])) if entry.get("tech") else "—"
+        tech = display_tech(entry.get("tech"))
         link = f"[GitHub]({entry['url']})"
-        lines.append(
-            f"| {entry['name']} | {entry['description']} | {tech} | {link} |"
-        )
+        rows_matrix.append([
+            entry["name"],
+            entry["description"],
+            tech,
+            link,
+        ])
+
+    all_rows = [headers, *rows_matrix]
+    col_widths = [max(len(row[idx]) for row in all_rows) for idx in range(len(headers))]
+
+    def render_row(cells: list[str]) -> str:
+        padded = [f" {cell.ljust(col_widths[idx])} " for idx, cell in enumerate(cells)]
+        return "|" + "|".join(padded) + "|"
+
+    separator = "|" + "|".join(["-" * (w + 2) for w in col_widths]) + "|"
+    lines = [render_row(headers), separator]
+    for data_row in rows_matrix:
+        lines.append(render_row(data_row))
+
     table = "\n".join(lines)
     return "\n".join([
         '<div dir="rtl">',
