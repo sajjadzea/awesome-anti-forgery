@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Blockcerts",
+    "category": "certificates",
+    "description": "Open standard for blockchain-based certificates and credentials.",
+    "url": "https://github.com/blockchain-certificates"
+  },
+  {
+    "name": "Keycloak",
+    "category": "identity",
+    "description": "Open-source identity and access management platform.",
+    "url": "https://github.com/keycloak/keycloak"
+  },
+  {
+    "name": "Hyperledger Grid",
+    "category": "supply-chain",
+    "description": "Framework for building supply-chain and provenance solutions.",
+    "url": "https://github.com/hyperledger/grid"
+  },
+  {
+    "name": "FakeCatcher",
+    "category": "media-forensics",
+    "description": "Open-source resources for detecting AI-generated videos.",
+    "url": "https://github.com/example/fakecatcher"
+  },
+  {
+    "name": "libsodium",
+    "category": "cryptography",
+    "description": "Modern, easy-to-use cryptography library.",
+    "url": "https://github.com/jedisct1/libsodium"
+  }
+]
