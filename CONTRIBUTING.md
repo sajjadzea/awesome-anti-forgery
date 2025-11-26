@@ -1,20 +1,20 @@
-# Contributing
+# راهنمای مشارکت
 
-Thanks for your interest in improving this awesome list of anti-forgery, anti-fraud, and anti-counterfeiting projects. Contributions are welcome from anyone who wants to surface high-quality open-source tools.
+از مشارکت شما برای تقویت فهرست پروژه‌های ضدجعل و ضدفرا‌د استقبال می‌کنیم. لطفاً دستورالعمل‌های زیر را رعایت کنید تا افزوده‌ها قابل اتکا و هم‌تراز بمانند.
 
-## How to contribute
-1. **Fork** this repository and create a feature branch for your changes.
-2. Add or update entries in `README.md`, keeping sections alphabetized and descriptions concise.
-3. Mirror the same additions in `projects.json` with the required fields (`name`, `github`, `url`, `category`, `description`, `tags`, `license`).
-4. Open a **pull request** describing what you added or changed and why it helps practitioners.
+## مراحل ارسال تغییرات
+1. ریپو را **Fork** و برای هر تغییر شاخه جداگانه ایجاد کنید.
+2. پروژه‌های جدید را در جدول دسته‌بندی مرتبط در `README.md` اضافه یا به‌روزرسانی کنید.
+3. همان پروژه را با فیلدهای کامل (`name`, `category`, `description`, `url`, `tech`, `license`) در `projects.json` ثبت کنید.
+4. توضیح کوتاه، فنی و بی‌طرف باشد و لینک‌ها باید واقعی و قابل دسترس باشند.
+5. پس از اطمینان از هم‌راستایی دو فایل، یک Pull Request با خلاصه تغییرات باز کنید.
 
-## Project criteria
-- Projects must be **open source** (e.g., GitHub, GitLab) and publicly accessible.
-- They should directly support authenticity, verification, or fraud prevention (documents, identity, supply chain, media, or cryptographic tooling).
-- Prefer projects that are maintained or stable enough to be useful; avoid abandoned proofs of concept.
+## معیارهای پذیرش
+- پروژه باید **اوپن‌سورس و عمومی** باشد و مستقیماً به اصالت‌سنجی، احراز هویت، زنجیره تأمین یا تشخیص رسانه جعلی کمک کند.
+- لینک GitHub/گیت‌های عمومی باید فعال و تست‌شده باشد؛ از مخازن خصوصی یا آرشیو شده استفاده نکنید.
+- توضیحات مختصر (کمتر از ~120 کاراکتر) و با تمرکز بر کاربرد فنی باشد؛ از لحن تبلیغاتی پرهیز کنید.
 
-## Formatting rules
-- Use the bullet style: `- **Project Name** – short description. [GitHub](https://github.com/owner/repo)`.
-- Keep descriptions neutral, specific, and under ~120 characters.
-- Sort entries alphabetically within each section.
-- Keep `README.md` and `projects.json` in sync for every project you add or remove.
+## قوانین قالب‌بندی
+- در `README.md` فقط از فرمت جدول هر بخش استفاده کنید و نام پروژه‌ها را حروف الفبا مرتب نگه دارید.
+- در `projects.json`، مقدار `category` باید با دسته‌بندی‌های README (certificates، identity، supply_chain، media_forensics، libraries) یکسان باشد.
+- هر ورودی باید دارای `tech` به‌صورت آرایه و `license` با نام مجوز معتبر (مثلاً Apache-2.0 یا MIT) باشد.
