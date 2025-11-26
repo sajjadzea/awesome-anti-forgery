@@ -1,32 +1,155 @@
 [
   {
-    "name": "Blockcerts",
-    "category": "certificates",
-    "description": "Open standard for blockchain-based certificates and credentials.",
-    "url": "https://github.com/blockchain-certificates"
+    "name": "Authelia",
+    "github": "authelia/authelia",
+    "url": "https://github.com/authelia/authelia",
+    "category": "identity",
+    "description": "SSO portal and 2FA-capable reverse proxy to protect web applications.",
+    "tags": ["sso", "2fa", "zero-trust"],
+    "license": null
   },
   {
-    "name": "Keycloak",
-    "category": "identity",
-    "description": "Open-source identity and access management platform.",
-    "url": "https://github.com/keycloak/keycloak"
+    "name": "Blockcerts",
+    "github": "blockchain-certificates/cert-issuer",
+    "url": "https://github.com/blockchain-certificates/cert-issuer",
+    "category": "certificates",
+    "description": "Open standard and tools for blockchain-based certificates and credentials.",
+    "tags": ["blockchain", "credentials", "verification"],
+    "license": null
+  },
+  {
+    "name": "Credential Handler Polyfill",
+    "github": "digitalbazaar/credential-handler-polyfill",
+    "url": "https://github.com/digitalbazaar/credential-handler-polyfill",
+    "category": "certificates",
+    "description": "Polyfill for W3C Verifiable Credential wallets to issue and verify digital credentials.",
+    "tags": ["verifiable-credentials", "wallet", "web"],
+    "license": null
+  },
+  {
+    "name": "DFDC Deepfake Challenge",
+    "github": "selimsef/dfdc_deepfake_challenge",
+    "url": "https://github.com/selimsef/dfdc_deepfake_challenge",
+    "category": "media_forensics",
+    "description": "Training and inference pipeline for the Facebook Deepfake Detection Challenge dataset.",
+    "tags": ["deepfake", "detection", "computer-vision"],
+    "license": null
+  },
+  {
+    "name": "FaceForensics",
+    "github": "ondyari/FaceForensics",
+    "url": "https://github.com/ondyari/FaceForensics",
+    "category": "media_forensics",
+    "description": "Dataset and benchmark code for detecting manipulated face videos and images.",
+    "tags": ["deepfake", "dataset", "forensics"],
+    "license": null
+  },
+  {
+    "name": "Google Tink",
+    "github": "google/tink",
+    "url": "https://github.com/google/tink",
+    "category": "library",
+    "description": "Multi-language cryptography SDK with safe defaults for signing and encryption.",
+    "tags": ["cryptography", "encryption", "signing"],
+    "license": null
   },
   {
     "name": "Hyperledger Grid",
-    "category": "supply-chain",
-    "description": "Framework for building supply-chain and provenance solutions.",
-    "url": "https://github.com/hyperledger/grid"
+    "github": "hyperledger/grid",
+    "url": "https://github.com/hyperledger/grid",
+    "category": "supply_chain",
+    "description": "Framework for supply-chain data models, product catalogs, and provenance.",
+    "tags": ["hyperledger", "traceability", "blockchain"],
+    "license": null
   },
   {
-    "name": "FakeCatcher",
-    "category": "media-forensics",
-    "description": "Open-source resources for detecting AI-generated videos.",
-    "url": "https://github.com/example/fakecatcher"
+    "name": "in-toto",
+    "github": "in-toto/in-toto",
+    "url": "https://github.com/in-toto/in-toto",
+    "category": "supply_chain",
+    "description": "Framework to secure software supply chains with signed step metadata and layout verification.",
+    "tags": ["supply-chain", "signing", "verification"],
+    "license": null
+  },
+  {
+    "name": "Keycloak",
+    "github": "keycloak/keycloak",
+    "url": "https://github.com/keycloak/keycloak",
+    "category": "identity",
+    "description": "Identity and access management with SSO, brokering, and fine-grained authorization.",
+    "tags": ["iam", "sso", "oauth2"],
+    "license": null
   },
   {
     "name": "libsodium",
-    "category": "cryptography",
-    "description": "Modern, easy-to-use cryptography library.",
-    "url": "https://github.com/jedisct1/libsodium"
+    "github": "jedisct1/libsodium",
+    "url": "https://github.com/jedisct1/libsodium",
+    "category": "library",
+    "description": "Modern, easy-to-use cryptographic library for signatures, encryption, and hashing.",
+    "tags": ["cryptography", "signing", "encryption"],
+    "license": null
+  },
+  {
+    "name": "Open Badges Validator Core",
+    "github": "IMSGlobal/openbadges-validator-core",
+    "url": "https://github.com/IMSGlobal/openbadges-validator-core",
+    "category": "certificates",
+    "description": "Validator for IMS Open Badges to check badge authenticity and structure.",
+    "tags": ["badges", "verification", "education"],
+    "license": null
+  },
+  {
+    "name": "OpenSSL",
+    "github": "openssl/openssl",
+    "url": "https://github.com/openssl/openssl",
+    "category": "library",
+    "description": "TLS/SSL toolkit and general-purpose cryptography library.",
+    "tags": ["tls", "ssl", "cryptography"],
+    "license": null
+  },
+  {
+    "name": "OriginTrail",
+    "github": "OriginTrail/ot-node",
+    "url": "https://github.com/OriginTrail/ot-node",
+    "category": "supply_chain",
+    "description": "Decentralized knowledge graph for product traceability and authenticity proofs.",
+    "tags": ["traceability", "blockchain", "supply-chain"],
+    "license": null
+  },
+  {
+    "name": "privacyIDEA",
+    "github": "privacyidea/privacyidea",
+    "url": "https://github.com/privacyidea/privacyidea",
+    "category": "identity",
+    "description": "Multi-factor authentication and policy engine for diverse tokens and workflows.",
+    "tags": ["mfa", "authentication", "tokens"],
+    "license": null
+  },
+  {
+    "name": "Python TUF",
+    "github": "theupdateframework/python-tuf",
+    "url": "https://github.com/theupdateframework/python-tuf",
+    "category": "library",
+    "description": "Reference implementation of The Update Framework for secure software updates.",
+    "tags": ["tuf", "updates", "signing"],
+    "license": null
+  },
+  {
+    "name": "Sigstore Cosign",
+    "github": "sigstore/cosign",
+    "url": "https://github.com/sigstore/cosign",
+    "category": "supply_chain",
+    "description": "Container signing and verification to prove software origin and integrity.",
+    "tags": ["signing", "supply-chain", "containers"],
+    "license": null
+  },
+  {
+    "name": "YubiKey libfido2",
+    "github": "Yubico/libfido2",
+    "url": "https://github.com/Yubico/libfido2",
+    "category": "library",
+    "description": "FIDO2/WebAuthn library for authenticators and security keys.",
+    "tags": ["fido2", "webauthn", "hardware"],
+    "license": null
   }
 ]
