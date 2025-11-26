@@ -1,61 +1,85 @@
-# Awesome Anti-Forgery & Anti-Fraud
+# لیست پروژه‌های اوپن‌سورس ضدجعل و ضدفرا‌د (Anti-Forgery & Anti-Fraud)
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-A curated list of open-source projects that fight forgery, fraud, and counterfeiting across documents, identities, supply chains, and media. These tools cover verifiable credentials, identity and access management, provenance for physical and digital goods, and media authenticity checks. The focus is on actionable software—frameworks, SDKs, and reference implementations—not generic articles.
+🔗 مناسب برای توسعه سیستم‌های اصالت‌سنجی داده، سند، کالا، هویت و تشخیص جعل رسانه‌ای
 
-## Table of Contents
-- [Certificates & Documents](#certificates--documents)
-- [Identity & Authentication](#identity--authentication)
-- [Supply Chain & Anti-Counterfeiting](#supply-chain--anti-counterfeiting)
-- [Deepfake & Media Forensics](#deepfake--media-forensics)
-- [Supporting Libraries & Tools](#supporting-libraries--tools)
-- [How to Use This List](#how-to-use-this-list)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [License](#license)
+- این ریپو مجموعه‌ای از پروژه‌های اوپن‌سورس مربوط به جلوگیری از جعل، احراز اصالت و کشف تقلب است.
+- پروژه‌ها در ۵ دسته طبقه‌بندی شده‌اند تا انتخاب و ارزیابی سریع‌تر شود.
+- تمام لینک‌ها واقعی و بررسی‌شده هستند تا مستقیماً در PoC یا محصول استفاده شوند.
 
-## Certificates & Documents
-- **Blockcerts** – Open standard and tools for blockchain-based certificates and credentials. [GitHub](https://github.com/blockchain-certificates/cert-issuer)
-- **Credential Handler Polyfill** – Polyfill for W3C Verifiable Credential wallets to issue and verify digital credentials. [GitHub](https://github.com/digitalbazaar/credential-handler-polyfill)
-- **Open Badges Validator Core** – Validator for IMS Open Badges to check badge authenticity and structure. [GitHub](https://github.com/IMSGlobal/openbadges-validator-core)
+## 🔷 فهرست بخش‌ها
+| بخش | لینک |
+|---|---|
+| اسناد و گواهی‌ها | [📄 Certificates & Documents](#certificates) |
+| هویت و احراز هویت | [🪪 Identity Authentication](#identity) |
+| زنجیره تأمین و کالا | [📦 Supply Chain Verification](#supply-chain) |
+| تشخیص رسانه و دیپ‌فیک | [🎭 Media Deepfake Detection](#media-forensics) |
+| کتابخانه‌ها و ابزارها | [🧰 Libraries & Crypto](#libraries) |
 
-## Identity & Authentication
-- **Authelia** – SSO portal and 2FA-capable reverse proxy to protect web applications. [GitHub](https://github.com/authelia/authelia)
-- **Keycloak** – Identity and access management with SSO, brokering, and fine-grained authorization. [GitHub](https://github.com/keycloak/keycloak)
-- **privacyIDEA** – Multi-factor authentication and policy engine for diverse tokens and workflows. [GitHub](https://github.com/privacyidea/privacyidea)
+---
 
-## Supply Chain & Anti-Counterfeiting
-- **Hyperledger Grid** – Framework for supply-chain data models, product catalogs, and provenance. [GitHub](https://github.com/hyperledger/grid)
-- **in-toto** – Framework to secure software supply chains with signed step metadata and layout verification. [GitHub](https://github.com/in-toto/in-toto)
-- **OriginTrail** – Decentralized knowledge graph for product traceability and authenticity proofs. [GitHub](https://github.com/OriginTrail/ot-node)
-- **Sigstore Cosign** – Container signing and verification to prove software origin and integrity. [GitHub](https://github.com/sigstore/cosign)
+<a id="certificates"></a>
+## 📄 1) پروژه‌های ضدجعل اسناد و گواهی‌ها
 
-## Deepfake & Media Forensics
-- **DFDC Deepfake Challenge** – Training and inference pipeline for the Facebook Deepfake Detection Challenge dataset. [GitHub](https://github.com/selimsef/dfdc_deepfake_challenge)
-- **FaceForensics** – Dataset and benchmark code for detecting manipulated face videos and images. [GitHub](https://github.com/ondyari/FaceForensics)
+| نام پروژه | توضیح کوتاه | تکنولوژی | لینک |
+|---|---|---|---|
+| Blockcerts | استاندارد صدور و تأیید گواهی روی بلاک‌چین با ابزار انتشار و اعتبارسنجی | Blockchain + JSON-LD | https://github.com/blockchain-certificates/cert-issuer |
+| Credential Handler Polyfill | پیاده‌سازی Polyfill برای کیف‌پول Verifiable Credential جهت صدور و بررسی اعتبار | Verifiable Credentials + Web | https://github.com/digitalbazaar/credential-handler-polyfill |
+| Open Badges Validator Core | اعتبارسنجی ساختار و اصالت IMS Open Badges برای گواهی‌های آموزشی | JSON Validation + Open Badges | https://github.com/IMSGlobal/openbadges-validator-core |
 
-## Supporting Libraries & Tools
-- **Google Tink** – Multi-language cryptography SDK with safe defaults for signing and encryption. [GitHub](https://github.com/google/tink)
-- **libsodium** – Modern, easy-to-use cryptographic library for signatures, encryption, and hashing. [GitHub](https://github.com/jedisct1/libsodium)
-- **OpenSSL** – TLS/SSL toolkit and general-purpose cryptography library. [GitHub](https://github.com/openssl/openssl)
-- **Python TUF** – Reference implementation of The Update Framework for secure software updates. [GitHub](https://github.com/theupdateframework/python-tuf)
-- **YubiKey libfido2** – FIDO2/WebAuthn library for authenticators and security keys. [GitHub](https://github.com/Yubico/libfido2)
+---
 
-## How to Use This List
-- Browse by category to discover projects that match your use case—documents, identity, supply chains, or media forensics.
-- Combine categories to build layered defenses (e.g., identity verification + document signing + supply-chain provenance).
-- Use these repos as starting points for prototypes, integrations, or audits when designing anti-fraud and authenticity workflows.
+<a id="identity"></a>
+## 🪪 2) هویت دیجیتال و Authentication
 
-## Roadmap
-- Expand coverage to sector-specific solutions (e.g., healthcare credentials, digital ticketing).
-- Add language and license badges for quick filtering.
-- Automate link health checks and metadata synchronization with `projects.json`.
+| نام پروژه | کاربرد | تکنولوژی | لینک |
+|---|---|---|---|
+| Authelia | درگاه SSO با پشتیبانی 2FA و سیاست‌های دسترسی معکوس برای اپلیکیشن‌های وب | OAuth2 / OIDC + Reverse Proxy | https://github.com/authelia/authelia |
+| Keycloak | مدیریت هویت و دسترسی سازمانی با SSO، فدراسیون و سیاست‌گذاری دقیق | OAuth2 / OIDC + SAML | https://github.com/keycloak/keycloak |
+| privacyIDEA | سامانه MFA و موتور سیاست برای توکن‌های متنوع و جریان‌های پیچیده احراز هویت | MFA + Policy Engine | https://github.com/privacyidea/privacyidea |
 
-## Contributing
-Contributions are welcome! Please follow the guidelines in [CONTRIBUTING.md](CONTRIBUTING.md) and keep entries concise, factual, and in alphabetical order. Update both `README.md` and `projects.json` when adding projects.
+---
 
-## License
-This project is licensed under the [MIT License](LICENSE).
+<a id="supply-chain"></a>
+## 📦 3) زنجیره تأمین و ردیابی اصالت کالا
+
+| نام | توضیح | فناوری | لینک |
+|---|---|---|---|
+| Hyperledger Grid | چارچوب مدل‌داده و قرارداد هوشمند برای شفافیت و ضدتقلب زنجیره تأمین | Hyperledger + Smart Contracts | https://github.com/hyperledger/grid |
+| in-toto | امنیت زنجیره عرضه نرم‌افزار با امضای مراحل و تأیید طرح اجرایی | Metadata Signing + Supply Chain Layout | https://github.com/in-toto/in-toto |
+| OriginTrail | گراف دانش غیرمتمرکز برای رهگیری کالا و اثبات اصالت در Supply Chain | DKG + Blockchain | https://github.com/OriginTrail/ot-node |
+| Sigstore Cosign | امضای کانتینر و آرتیفکت برای اثبات منشاء و تمامیت بسته‌های نرم‌افزاری | Sigstore + Container Signing | https://github.com/sigstore/cosign |
+
+---
+
+<a id="media-forensics"></a>
+## 🎭 4) تشخیص رسانه جعلی (Deepfake & Forensics)
+
+| نام | کاربرد | مدل پردازش | لینک |
+|---|---|---|---|
+| DFDC Deepfake Challenge | کد آموزش/استنتاج روی دیتاست Facebook DFDC برای کشف ویدئوهای جعل‌شده | CNN + Video ML | https://github.com/selimsef/dfdc_deepfake_challenge |
+| FaceForensics | دیتاست و کد بنچمارک برای تشخیص ویدئو و تصویر دستکاری‌شده صورت | CNN + Forensic Analysis | https://github.com/ondyari/FaceForensics |
+
+---
+
+<a id="libraries"></a>
+## 🧰 5) کتابخانه‌ها و ابزار امنیتی
+
+| نام ابزار | کاربرد | زبان/پشته | لینک |
+|---|---|---|---|
+| Google Tink | SDK چندزبانه رمزنگاری با تنظیمات امن برای امضا و رمزنگاری | C++ / Java / Go / Python | https://github.com/google/tink |
+| libsodium | کتابخانه رمزنگاری سطح سیستم برای امضا، رمزنگاری و هش | C | https://github.com/jedisct1/libsodium |
+| OpenSSL | مجموعه ابزار TLS/SSL و رمزنگاری عمومی برای شبکه و فایل | C | https://github.com/openssl/openssl |
+| Python TUF | مرجع The Update Framework برای به‌روزرسانی امن بسته‌های نرم‌افزاری | Python | https://github.com/theupdateframework/python-tuf |
+| YubiKey libfido2 | پیاده‌سازی FIDO2/WebAuthn برای کلیدهای امنیتی سخت‌افزاری | C | https://github.com/Yubico/libfido2 |
+
+---
+
+## نحوه استفاده
+- بر اساس دسته‌بندی، پروژه متناسب با نیاز (اسناد، هویت، زنجیره تأمین، رسانه یا کتابخانه) را انتخاب کنید.
+- مخازن معرفی‌شده را برای POC یا ادغام مستقیم کلون کرده و به کمک توضیحات فنی سریعاً راه‌اندازی کنید.
+- برای هر افزوده جدید، هر دو فایل `README.md` و `projects.json` را همزمان به‌روز کنید تا هم‌راستا بمانند.
+
+## لایسنس
+این فهرست تحت مجوز [MIT](LICENSE) منتشر شده است.
