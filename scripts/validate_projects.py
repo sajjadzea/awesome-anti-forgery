@@ -19,6 +19,8 @@ ALLOWED_CATEGORIES = {
     "library",
 }
 
+REQUIRED_FIELDS = ["name", "github", "url", "category", "description", "tags", "license"]
+
 
 def load_projects(path: Path):
     with path.open("r", encoding="utf-8") as f:
@@ -34,10 +36,12 @@ def validate_structure(projects):
         if not isinstance(entry, dict):
             raise ValueError("Each project entry must be an object")
 
-        required = ["name", "github", "url", "category", "description", "tags", "license"]
-        for field in required:
+        for field in REQUIRED_FIELDS:
             if field not in entry:
-                raise ValueError(f"Missing required field '{field}' in entry: {entry}")
+                raise ValueError(
+                    f"Missing required field '{field}' in entry: {entry}. "
+                    f"Required fields: {', '.join(REQUIRED_FIELDS)}"
+                )
 
         name = entry["name"].strip()
         if not name:
@@ -48,7 +52,10 @@ def validate_structure(projects):
 
         category = entry["category"]
         if category not in ALLOWED_CATEGORIES:
-            raise ValueError(f"Invalid category '{category}' for project {name}")
+            allowed = ", ".join(sorted(ALLOWED_CATEGORIES))
+            raise ValueError(
+                f"Invalid category '{category}' for project {name}. Allowed: {allowed}"
+            )
 
         url = entry["url"]
         parsed = urlparse(url)
@@ -70,9 +77,13 @@ def check_urls(projects, timeout):
         try:
             response = requests.head(url, allow_redirects=True, timeout=timeout)
             if response.status_code >= 400:
-                raise ValueError(f"URL check failed for {entry['name']} ({url}): {response.status_code}")
+                raise ValueError(
+                    f"URL check failed for {entry['name']} ({url}): status {response.status_code}"
+                )
         except Exception as exc:  # pragma: no cover - network variability
-            raise ValueError(f"URL check failed for {entry['name']} ({url}): {exc}")
+            raise ValueError(
+                f"URL check failed for {entry['name']} ({url}): {exc}"
+            )
 
 
 def main():
