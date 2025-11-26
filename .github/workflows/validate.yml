@@ -24,4 +24,4 @@ jobs:
 
       - name: Validate projects.json
         run: |
-          scripts/validate_projects.py --check-urls
+          python scripts/validate_projects.py --check-urls --timeout 5.0
