@@ -1,29 +1,62 @@
 [
   {
-    "name": "Blockcerts",
+    "name": "Automated Document Verification",
+    "github": "Karan-07E/Automated-Document-Verification",
+    "url": "https://github.com/Karan-07E/Automated-Document-Verification",
+    "category": "certificates",
+    "description": "پلتفرم وب برای تأیید اسناد رسمی با بلاک‌چین و رابط کاربری مدرن.",
+    "tech": ["react", "node", "blockchain"],
+    "tags": ["document", "verification", "webapp"],
+    "license": "UNKNOWN"
+  },
+  {
+    "name": "BlockChain-Based Document Verification with IPFS",
+    "github": "DevAloshe/BlockChain-Based-Document-Verfication-With-IPFS",
+    "url": "https://github.com/DevAloshe/BlockChain-Based-Document-Verfication-With-IPFS",
+    "category": "certificates",
+    "description": "ذخیره هش سند روی بلاک‌چین و سند در IPFS برای جلوگیری از دستکاری.",
+    "tech": ["blockchain", "ipfs"],
+    "tags": ["document", "verification", "integrity"],
+    "license": "UNKNOWN"
+  },
+  {
+    "name": "Blockcerts (cert-issuer)",
     "github": "blockchain-certificates/cert-issuer",
     "url": "https://github.com/blockchain-certificates/cert-issuer",
     "category": "certificates",
-    "description": "استاندارد و ابزارهای صدور و اعتبارسنجی گواهی بلاک‌چینی.",
-    "tags": ["blockchain", "json-ld", "credentials"],
+    "description": "استاندارد Blockcerts و ابزار صدور گواهی روی بلاک‌چین برای امضا و راستی‌آزمایی.",
+    "tech": ["blockchain", "credentials", "json-ld"],
+    "tags": ["certificate", "verification", "education"],
     "license": "MIT"
   },
   {
-    "name": "Credential Handler Polyfill",
-    "github": "digitalbazaar/credential-handler-polyfill",
-    "url": "https://github.com/digitalbazaar/credential-handler-polyfill",
+    "name": "EtherDocs",
+    "github": "DevelopersLeague/EtherDocs",
+    "url": "https://github.com/DevelopersLeague/EtherDocs",
     "category": "certificates",
-    "description": "پیاده‌سازی Polyfill برای کیف‌پول Verifiable Credential و تعامل با صادرکننده/اعتبارسنج.",
-    "tags": ["verifiable-credentials", "wallet", "web"],
-    "license": "BSD-3-Clause"
+    "description": "مدیریت و تأیید اسناد دانشگاهی با بلاک‌چین، IPFS و توابع هش.",
+    "tech": ["blockchain", "ipfs", "hashing"],
+    "tags": ["education", "document", "verification"],
+    "license": "UNKNOWN"
   },
   {
-    "name": "Open Badges Validator Core",
-    "github": "IMSGlobal/openbadges-validator-core",
-    "url": "https://github.com/IMSGlobal/openbadges-validator-core",
+    "name": "Online Document Verification using Blockchain",
+    "github": "SomSingh23/Online-document-verification-using-Blockchain",
+    "url": "https://github.com/SomSingh23/Online-document-verification-using-Blockchain",
     "category": "certificates",
-    "description": "اعتبارسنجی ساختار و امضای Open Badges برای گواهی‌های آموزشی.",
-    "tags": ["open-badges", "validation", "education"],
+    "description": "سامانه وب برای تأیید و احراز اصالت اسناد با استفاده از بلاک‌چین.",
+    "tech": ["ethereum", "web"],
+    "tags": ["document", "verification", "webapp"],
+    "license": "UNKNOWN"
+  },
+  {
+    "name": "OpenAttestation (OpenCerts)",
+    "github": "Open-Attestation/open-attestation",
+    "url": "https://github.com/Open-Attestation/open-attestation",
+    "category": "certificates",
+    "description": "استاندارد OpenAttestation که زیرساخت OpenCerts سنگاپور برای صدور و اعتبارسنجی گواهی‌های آموزشی است.",
+    "tech": ["blockchain", "merkle", "ethereum"],
+    "tags": ["certificate", "verification", "education"],
     "license": "Apache-2.0"
   },
   {
@@ -31,98 +64,179 @@
     "github": "authelia/authelia",
     "url": "https://github.com/authelia/authelia",
     "category": "identity",
-    "description": "پرتال SSO با 2FA و کنترل دسترسی معکوس برای اپلیکیشن‌های وب.",
-    "tags": ["sso", "2fa", "reverse-proxy"],
+    "description": "پورتال SSO و MFA به‌صورت reverse-proxy برای حفاظت برنامه‌های وب.",
+    "tech": ["go", "sso", "mfa"],
+    "tags": ["identity", "authentication", "reverse-proxy"],
     "license": "Apache-2.0"
+  },
+  {
+    "name": "Blockchain-based Identity Verification",
+    "github": "Kayleexx/Blockchain-based-identity-verification",
+    "url": "https://github.com/Kayleexx/Blockchain-based-identity-verification",
+    "category": "identity",
+    "description": "سامانه احراز هویت غیرمتمرکز روی بلاک‌چین اتریوم با Solidity.",
+    "tech": ["solidity", "ethereum"],
+    "tags": ["identity", "blockchain", "verification"],
+    "license": "UNKNOWN"
+  },
+  {
+    "name": "Decentralized Identity Verification (DID)",
+    "github": "codewithsheikh/Decentralized-Identity-Verification-System-DID-on-Ethereum-Blockchain",
+    "url": "https://github.com/codewithsheikh/Decentralized-Identity-Verification-System-DID-on-Ethereum-Blockchain",
+    "category": "identity",
+    "description": "پیاده‌سازی سیستم DID برای مدیریت هویت غیرمتمرکز روی اتریوم.",
+    "tech": ["solidity", "ethereum", "did"],
+    "tags": ["identity", "decentralized", "blockchain"],
+    "license": "UNKNOWN"
+  },
+  {
+    "name": "Identity.com",
+    "github": "identity-com",
+    "url": "https://github.com/identity-com",
+    "category": "identity",
+    "description": "مجموعه سرویس‌های احراز هویت غیرمتمرکز و KYC روی بلاک‌چین.",
+    "tech": ["blockchain", "identity"],
+    "tags": ["kyc", "identity", "verification"],
+    "license": "UNKNOWN"
   },
   {
     "name": "Keycloak",
     "github": "keycloak/keycloak",
     "url": "https://github.com/keycloak/keycloak",
     "category": "identity",
-    "description": "سیستم مدیریت هویت با SSO، فدراسیون و سیاست‌های دسترسی.",
-    "tags": ["oauth2", "oidc", "saml"],
+    "description": "مدیریت هویت و دسترسی (SSO، احراز چندعاملی، مدیریت کاربر) برای وب‌اپ و API.",
+    "tech": ["java", "oauth2", "openid-connect"],
+    "tags": ["identity", "sso", "authentication"],
     "license": "Apache-2.0"
   },
   {
-    "name": "privacyIDEA",
-    "github": "privacyidea/privacyidea",
-    "url": "https://github.com/privacyidea/privacyidea",
+    "name": "Ory Hydra",
+    "github": "ory/hydra",
+    "url": "https://github.com/ory/hydra",
     "category": "identity",
-    "description": "سامانه MFA و موتور سیاست برای توکن‌های متنوع و گردش‌های احراز هویت.",
-    "tags": ["mfa", "policy-engine", "tokens"],
-    "license": "AGPL-3.0"
+    "description": "سرور OAuth2/OIDC متن‌باز برای صدور توکن و جلوگیری از جعل هویت.",
+    "tech": ["go", "oauth2", "openid-connect"],
+    "tags": ["identity", "authorization", "tokens"],
+    "license": "Apache-2.0"
+  },
+  {
+    "name": "Hyperledger Food Supply Chain",
+    "github": "AleRapchan/hyperledger-supply-chain",
+    "url": "https://github.com/AleRapchan/hyperledger-supply-chain",
+    "category": "supply_chain",
+    "description": "راهکار زنجیره تأمین مواد غذایی روی Hyperledger Fabric برای ردیابی منشأ محصول.",
+    "tech": ["hyperledger-fabric"],
+    "tags": ["food", "supply-chain", "traceability"],
+    "license": "UNKNOWN"
   },
   {
     "name": "Hyperledger Grid",
     "github": "hyperledger/grid",
     "url": "https://github.com/hyperledger/grid",
     "category": "supply_chain",
-    "description": "چارچوب مدل‌داده و قرارداد هوشمند برای شفافیت زنجیره تأمین.",
-    "tags": ["hyperledger", "sawtooth", "smart-contracts"],
+    "description": "پلتفرم ماژولار برای مدیریت زنجیره تأمین و اصالت دارایی‌ها روی بلاک‌چین.",
+    "tech": ["hyperledger", "rust"],
+    "tags": ["supply-chain", "provenance", "modular"],
     "license": "Apache-2.0"
   },
   {
-    "name": "in-toto",
-    "github": "in-toto/in-toto",
-    "url": "https://github.com/in-toto/in-toto",
+    "name": "OriginTrail DKG Client",
+    "github": "OriginTrail/dkg-client",
+    "url": "https://github.com/OriginTrail/dkg-client",
     "category": "supply_chain",
-    "description": "امضای متادیتا و اعتبارسنجی چیدمان جهت امنیت زنجیره عرضه نرم‌افزار.",
-    "tags": ["supply-chain", "signing", "verification"],
-    "license": "Apache-2.0"
+    "description": "کتابخانه برای تعامل با Decentralized Knowledge Graph و مدیریت دارایی‌های دانشی.",
+    "tech": ["javascript", "dkg"],
+    "tags": ["knowledge-graph", "client", "sdk"],
+    "license": "UNKNOWN"
   },
   {
-    "name": "OriginTrail",
+    "name": "OriginTrail Node (OT Node)",
     "github": "OriginTrail/ot-node",
     "url": "https://github.com/OriginTrail/ot-node",
     "category": "supply_chain",
-    "description": "گراف دانش غیرمتمرکز برای رهگیری کالا و اثبات اصالت.",
-    "tags": ["blockchain", "dkg", "traceability"],
-    "license": "GPL-3.0"
+    "description": "نود شبکه OriginTrail برای ساخت گراف دانش غیرمتمرکز و داده‌های قابل‌اعتماد.",
+    "tech": ["nodejs", "web3", "dkg"],
+    "tags": ["supply-chain", "provenance", "knowledge-graph"],
+    "license": "UNKNOWN"
   },
   {
-    "name": "Sigstore Cosign",
-    "github": "sigstore/cosign",
-    "url": "https://github.com/sigstore/cosign",
+    "name": "Pharma Supply Chain (Fabric)",
+    "github": "spike-spiegel-21/blockchain-supply-chain",
+    "url": "https://github.com/spike-spiegel-21/blockchain-supply-chain",
     "category": "supply_chain",
-    "description": "امضای کانتینر و آرتیفکت برای اثبات منشاء و تمامیت بسته‌های نرم‌افزاری.",
-    "tags": ["sigstore", "container-signing", "slsa"],
-    "license": "Apache-2.0"
+    "description": "پیاده‌سازی زنجیره تأمین دارو با Hyperledger Fabric برای ردیابی و جلوگیری از تقلب.",
+    "tech": ["hyperledger-fabric"],
+    "tags": ["pharma", "supply-chain", "traceability"],
+    "license": "UNKNOWN"
   },
   {
-    "name": "DFDC Deepfake Challenge",
-    "github": "selimsef/dfdc_deepfake_challenge",
-    "url": "https://github.com/selimsef/dfdc_deepfake_challenge",
+    "name": "Supply Chain using Hyperledger Fabric & React",
+    "github": "kuldeep23907/Supply-Chain-using-Hyperledger-Fabric-and-React",
+    "url": "https://github.com/kuldeep23907/Supply-Chain-using-Hyperledger-Fabric-and-React",
+    "category": "supply_chain",
+    "description": "نمونه سیستم زنجیره تأمین با تمرکز بر ردیابی و احراز اصالت و رابط React.",
+    "tech": ["hyperledger-fabric", "react"],
+    "tags": ["supply-chain", "frontend", "blockchain"],
+    "license": "UNKNOWN"
+  },
+  {
+    "name": "Awesome Deepfakes Detection",
+    "github": "Daisy-Zhang/Awesome-Deepfakes-Detection",
+    "url": "https://github.com/Daisy-Zhang/Awesome-Deepfakes-Detection",
     "category": "media_forensics",
-    "description": "پیاده‌سازی آموزش و استنتاج روی دیتاست DFDC برای تشخیص دیپ‌فیک ویدئویی.",
-    "tags": ["cnn", "video-ml", "deepfake-detection"],
-    "license": "MIT"
+    "description": "فهرست مرجع مقالات و ابزارهای تشخیص دیپ‌فیک و فورنزیک رسانه.",
+    "tech": ["survey", "awesome-list"],
+    "tags": ["deepfake", "research", "detection"],
+    "license": "UNKNOWN"
   },
   {
-    "name": "FaceForensics",
+    "name": "DeepSafe",
+    "github": "siddharthksah/DeepSafe",
+    "url": "https://github.com/siddharthksah/DeepSafe",
+    "category": "media_forensics",
+    "description": "پلتفرم وب Streamlit برای تشخیص دیپ‌فیک روی تصویر و ویدئو.",
+    "tech": ["python", "streamlit", "docker"],
+    "tags": ["deepfake", "image", "video"],
+    "license": "UNKNOWN"
+  },
+  {
+    "name": "Deepfake Detection using Deep Learning",
+    "github": "abhijithjadhav/Deepfake_detection_using_deep_learning",
+    "url": "https://github.com/abhijithjadhav/Deepfake_detection_using_deep_learning",
+    "category": "media_forensics",
+    "description": "تشخیص دیپ‌فیک ویدئو با ترکیب ResNext و LSTM (استخراج ویژگی + توالی زمانی).",
+    "tech": ["pytorch", "cnn", "lstm"],
+    "tags": ["deepfake", "video", "detection"],
+    "license": "UNKNOWN"
+  },
+  {
+    "name": "DeepfakeDetector",
+    "github": "TRahulsingh/DeepfakeDetector",
+    "url": "https://github.com/TRahulsingh/DeepfakeDetector",
+    "category": "media_forensics",
+    "description": "سامانه تشخیص دیپ‌فیک با EfficientNet-B0 و رابط وب کاربرپسند.",
+    "tech": ["pytorch", "efficientnet", "web"],
+    "tags": ["deepfake", "webapp", "detection"],
+    "license": "UNKNOWN"
+  },
+  {
+    "name": "FaceForensics++",
     "github": "ondyari/FaceForensics",
     "url": "https://github.com/ondyari/FaceForensics",
     "category": "media_forensics",
-    "description": "دیتاست و کد بنچمارک برای تشخیص چهره‌های دستکاری‌شده.",
-    "tags": ["forensics", "dataset", "cnn"],
-    "license": "MIT"
-  },
-  {
-    "name": "Google Tink",
-    "github": "google/tink",
-    "url": "https://github.com/google/tink",
-    "category": "library",
-    "description": "SDK چندزبانه رمزنگاری با پیش‌فرض‌های ایمن برای امضا و رمزنگاری.",
-    "tags": ["cryptography", "encryption", "signing"],
-    "license": "Apache-2.0"
+    "description": "دیتاست و کد تشخیص چهره دستکاری‌شده برای سنجش سامانه‌های ضد دیپ‌فیک.",
+    "tech": ["dataset", "forensics"],
+    "tags": ["deepfake", "dataset", "benchmark"],
+    "license": "UNKNOWN"
   },
   {
     "name": "libsodium",
     "github": "jedisct1/libsodium",
     "url": "https://github.com/jedisct1/libsodium",
     "category": "library",
-    "description": "کتابخانه رمزنگاری سطح‌سیستم برای امضا، رمزنگاری و هش.",
-    "tags": ["cryptography", "encryption", "signing"],
+    "description": "کتابخانه مدرن و ساده برای رمزنگاری، امضا، هش و مدیریت کلید.",
+    "tech": ["c", "crypto", "signature"],
+    "tags": ["encryption", "hashing", "signing"],
     "license": "ISC"
   },
   {
@@ -130,26 +244,19 @@
     "github": "openssl/openssl",
     "url": "https://github.com/openssl/openssl",
     "category": "library",
-    "description": "جعبه‌ابزار TLS/SSL و رمزنگاری عمومی برای شبکه و فایل.",
-    "tags": ["tls", "ssl", "cryptography"],
+    "description": "تولکیت کامل SSL/TLS و رمزنگاری برای ارتباطات امن.",
+    "tech": ["c", "tls", "ssl"],
+    "tags": ["encryption", "tls", "certificates"],
     "license": "Apache-2.0"
   },
   {
-    "name": "Python TUF",
-    "github": "theupdateframework/python-tuf",
-    "url": "https://github.com/theupdateframework/python-tuf",
+    "name": "Tink",
+    "github": "google/tink",
+    "url": "https://github.com/google/tink",
     "category": "library",
-    "description": "مرجع The Update Framework برای مدیریت به‌روزرسانی امن بسته‌ها.",
-    "tags": ["tuf", "updates", "signing"],
+    "description": "کتابخانه چندزبانه گوگل برای رمزنگاری متقارن/نامتقارن و امضای دیجیتال با API امن.",
+    "tech": ["go", "java", "python"],
+    "tags": ["encryption", "signing", "key-management"],
     "license": "Apache-2.0"
-  },
-  {
-    "name": "YubiKey libfido2",
-    "github": "Yubico/libfido2",
-    "url": "https://github.com/Yubico/libfido2",
-    "category": "library",
-    "description": "کتابخانه FIDO2/WebAuthn برای احراز هویت سخت‌افزاری.",
-    "tags": ["fido2", "webauthn", "hardware"],
-    "license": "BSD-2-Clause"
   }
 ]

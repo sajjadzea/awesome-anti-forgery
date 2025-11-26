@@ -1,85 +1,128 @@
-# لیست پروژه‌های اوپن‌سورس ضدجعل و ضدفرا‌د (Anti-Forgery & Anti-Fraud)
+# لیست پروژه‌های اوپن‌سورس ضدجعل و ضدفرا‌د (Awesome Anti-Forgery & Anti-Fraud) 🔍
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-🔗 مناسب برای توسعه سیستم‌های اصالت‌سنجی داده، سند، کالا، هویت و تشخیص جعل رسانه‌ای
+[English version](README.en.md)
 
-- این ریپو مجموعه‌ای از پروژه‌های اوپن‌سورس مربوط به جلوگیری از جعل، احراز اصالت و کشف تقلب است.
-- پروژه‌ها در ۵ دسته طبقه‌بندی شده‌اند تا انتخاب و ارزیابی سریع‌تر شود.
-- تمام لینک‌ها واقعی و بررسی‌شده هستند تا مستقیماً در PoC یا محصول استفاده شوند.
+&#x202b; # راهنمای جامع پروژه‌های اوپن‌سورس ضدجعل، ضدفرا‌د و اصالت‌سنجی
 
-## 🔷 فهرست بخش‌ها
-| بخش | لینک |
-|---|---|
-| اسناد و گواهی‌ها | [📄 Certificates & Documents](#certificates) |
-| هویت و احراز هویت | [🪪 Identity Authentication](#identity) |
-| زنجیره تأمین و کالا | [📦 Supply Chain Verification](#supply-chain) |
-| تشخیص رسانه و دیپ‌فیک | [🎭 Media Deepfake Detection](#media-forensics) |
-| کتابخانه‌ها و ابزارها | [🧰 Libraries & Crypto](#libraries) |
+این مخزن، فهرستی ساختارمند از پروژه‌های اوپن‌سورس است که در یکی از این حوزه‌ها کمک می‌کنند:
 
----
+- جلوگیری از **جعل سند و گواهی** (Document & Certificate Forgery)
+- **احراز هویت و هویت دیجیتال امن** (Identity & Access Management)
+- **ردیابی منشاء کالا و شفافیت زنجیره تأمین** (Supply Chain Traceability)
+- **تشخیص رسانه‌های جعلی و دیپ‌فیک** (Deepfake & Media Forensics)
+- کتابخانه‌های **رمزنگاری و امضای دیجیتال** که زیرساخت این سیستم‌ها را می‌سازند
 
-<a id="certificates"></a>
-## 📄 1) پروژه‌های ضدجعل اسناد و گواهی‌ها
-
-| نام پروژه | توضیح کوتاه | تکنولوژی | لینک |
-|---|---|---|---|
-| Blockcerts | استاندارد صدور و تأیید گواهی روی بلاک‌چین با ابزار انتشار و اعتبارسنجی | Blockchain + JSON-LD | https://github.com/blockchain-certificates/cert-issuer |
-| Credential Handler Polyfill | پیاده‌سازی Polyfill برای کیف‌پول Verifiable Credential جهت صدور و بررسی اعتبار | Verifiable Credentials + Web | https://github.com/digitalbazaar/credential-handler-polyfill |
-| Open Badges Validator Core | اعتبارسنجی ساختار و اصالت IMS Open Badges برای گواهی‌های آموزشی | JSON Validation + Open Badges | https://github.com/IMSGlobal/openbadges-validator-core |
+> ⚠️ توجه: درج یک پروژه در این لیست به معنی «تأیید امنیتی» آن نیست. قبل از استفاده در محیط‌های حساس، حتماً کد، معماری و مدل تهدید را خودتان بررسی کنید.
 
 ---
 
-<a id="identity"></a>
-## 🪪 2) هویت دیجیتال و Authentication
-
-| نام پروژه | کاربرد | تکنولوژی | لینک |
-|---|---|---|---|
-| Authelia | درگاه SSO با پشتیبانی 2FA و سیاست‌های دسترسی معکوس برای اپلیکیشن‌های وب | OAuth2 / OIDC + Reverse Proxy | https://github.com/authelia/authelia |
-| Keycloak | مدیریت هویت و دسترسی سازمانی با SSO، فدراسیون و سیاست‌گذاری دقیق | OAuth2 / OIDC + SAML | https://github.com/keycloak/keycloak |
-| privacyIDEA | سامانه MFA و موتور سیاست برای توکن‌های متنوع و جریان‌های پیچیده احراز هویت | MFA + Policy Engine | https://github.com/privacyidea/privacyidea |
-
----
-
-<a id="supply-chain"></a>
-## 📦 3) زنجیره تأمین و ردیابی اصالت کالا
-
-| نام | توضیح | فناوری | لینک |
-|---|---|---|---|
-| Hyperledger Grid | چارچوب مدل‌داده و قرارداد هوشمند برای شفافیت و ضدتقلب زنجیره تأمین | Hyperledger + Smart Contracts | https://github.com/hyperledger/grid |
-| in-toto | امنیت زنجیره عرضه نرم‌افزار با امضای مراحل و تأیید طرح اجرایی | Metadata Signing + Supply Chain Layout | https://github.com/in-toto/in-toto |
-| OriginTrail | گراف دانش غیرمتمرکز برای رهگیری کالا و اثبات اصالت در Supply Chain | DKG + Blockchain | https://github.com/OriginTrail/ot-node |
-| Sigstore Cosign | امضای کانتینر و آرتیفکت برای اثبات منشاء و تمامیت بسته‌های نرم‌افزاری | Sigstore + Container Signing | https://github.com/sigstore/cosign |
+## فهرست مطالب
+- [اسناد و گواهی‌ها (Certificates & Documents)](#اسناد-و-گواهیها-certificates--documents)
+- [هویت دیجیتال و احراز هویت (Identity & Authentication)](#هویت-دیجیتال-و-احراز-هویت-identity--authentication)
+- [زنجیره تأمین و اصالت کالا (Supply Chain & Anti-Counterfeiting)](#زنجیره-تأمین-و-اصالت-کالا-supply-chain--anti-counterfeiting)
+- [تشخیص رسانه جعلی و دیپ‌فیک (Media & Deepfake Detection)](#تشخیص-رسانه-جعلی-و-دیپفیک-media--deepfake-detection)
+- [کتابخانه‌ها و ابزارهای رمزنگاری (Crypto Libraries & Tools)](#کتابخانهها-و-ابزارهای-رمزنگاری-crypto-libraries--tools)
+- [موارد استفاده (Use Cases)](#موارد-استفاده-use-cases)
+- [نحوه استفاده از این لیست](#نحوه-استفاده-از-این-لیست)
+- [مشارکت در توسعه](#مشارکت-در-توسعه)
+- [لایسنس](#لایسنس)
 
 ---
 
-<a id="media-forensics"></a>
-## 🎭 4) تشخیص رسانه جعلی (Deepfake & Forensics)
+## اسناد و گواهی‌ها (Certificates & Documents)
+سیستم‌هایی برای **صدور، ذخیره و اعتبارسنجی گواهی‌ها و اسناد** به‌صورت تغییر‌ناپذیر.
 
-| نام | کاربرد | مدل پردازش | لینک |
-|---|---|---|---|
-| DFDC Deepfake Challenge | کد آموزش/استنتاج روی دیتاست Facebook DFDC برای کشف ویدئوهای جعل‌شده | CNN + Video ML | https://github.com/selimsef/dfdc_deepfake_challenge |
-| FaceForensics | دیتاست و کد بنچمارک برای تشخیص ویدئو و تصویر دستکاری‌شده صورت | CNN + Forensic Analysis | https://github.com/ondyari/FaceForensics |
-
----
-
-<a id="libraries"></a>
-## 🧰 5) کتابخانه‌ها و ابزار امنیتی
-
-| نام ابزار | کاربرد | زبان/پشته | لینک |
-|---|---|---|---|
-| Google Tink | SDK چندزبانه رمزنگاری با تنظیمات امن برای امضا و رمزنگاری | C++ / Java / Go / Python | https://github.com/google/tink |
-| libsodium | کتابخانه رمزنگاری سطح سیستم برای امضا، رمزنگاری و هش | C | https://github.com/jedisct1/libsodium |
-| OpenSSL | مجموعه ابزار TLS/SSL و رمزنگاری عمومی برای شبکه و فایل | C | https://github.com/openssl/openssl |
-| Python TUF | مرجع The Update Framework برای به‌روزرسانی امن بسته‌های نرم‌افزاری | Python | https://github.com/theupdateframework/python-tuf |
-| YubiKey libfido2 | پیاده‌سازی FIDO2/WebAuthn برای کلیدهای امنیتی سخت‌افزاری | C | https://github.com/Yubico/libfido2 |
+| نام پروژه | توضیح کوتاه | فناوری اصلی | لینک |
+| --- | --- | --- | --- |
+| Automated Document Verification | پلتفرم وب برای تأیید اسناد رسمی با بلاک‌چین و رابط کاربری مدرن | React, Node.js, Blockchain | https://github.com/Karan-07E/Automated-Document-Verification |
+| BlockChain-Based Document Verification with IPFS | ذخیره هش سند روی بلاک‌چین و خود سند روی IPFS برای جلوگیری از دستکاری | Blockchain, IPFS | https://github.com/DevAloshe/BlockChain-Based-Document-Verfication-With-IPFS |
+| Blockcerts (cert-issuer) | استاندارد Blockcerts و ابزار صدور گواهی روی بلاک‌چین برای امضا و راستی‌آزمایی | Blockchain, JSON-LD | https://github.com/blockchain-certificates/cert-issuer |
+| EtherDocs | مدیریت و تأیید اسناد دانشگاهی با بلاک‌چین، IPFS و توابع هش | Blockchain, IPFS | https://github.com/DevelopersLeague/EtherDocs |
+| Online Document Verification using Blockchain | سامانه وب برای تأیید و احراز اصالت اسناد با استفاده از بلاک‌چین | Ethereum, Web | https://github.com/SomSingh23/Online-document-verification-using-Blockchain |
+| OpenAttestation (OpenCerts) | استاندارد OpenAttestation که مبنای OpenCerts سنگاپور برای صدور و اعتبارسنجی گواهی‌های آموزشی است | Ethereum, Merkle Proofs | https://github.com/Open-Attestation/open-attestation |
 
 ---
 
-## نحوه استفاده
-- بر اساس دسته‌بندی، پروژه متناسب با نیاز (اسناد، هویت، زنجیره تأمین، رسانه یا کتابخانه) را انتخاب کنید.
-- مخازن معرفی‌شده را برای POC یا ادغام مستقیم کلون کرده و به کمک توضیحات فنی سریعاً راه‌اندازی کنید.
-- برای هر افزوده جدید، هر دو فایل `README.md` و `projects.json` را همزمان به‌روز کنید تا هم‌راستا بمانند.
+## هویت دیجیتال و احراز هویت (Identity & Authentication)
+پروژه‌هایی برای **مدیریت هویت، جلوگیری از جعل هویت، SSO و احراز هویت غیرمتمرکز**.
+
+| نام پروژه | کاربرد اصلی | فناوری | لینک |
+| --- | --- | --- | --- |
+| Authelia | پورتال SSO و MFA به‌صورت reverse-proxy برای حفاظت برنامه‌های وب | Go, 2FA | https://github.com/authelia/authelia |
+| Blockchain-based Identity Verification | سامانه احراز هویت غیرمتمرکز روی بلاک‌چین اتریوم با Solidity | Ethereum, Solidity | https://github.com/Kayleexx/Blockchain-based-identity-verification |
+| Decentralized Identity Verification (DID) | پیاده‌سازی سیستم DID برای مدیریت هویت غیرمتمرکز روی اتریوم | Ethereum, DID, Solidity | https://github.com/codewithsheikh/Decentralized-Identity-Verification-System-DID-on-Ethereum-Blockchain |
+| Identity.com | مجموعه سرویس‌های احراز هویت غیرمتمرکز و KYC روی بلاک‌چین | Blockchain, Identity | https://github.com/identity-com |
+| Keycloak | مدیریت هویت و دسترسی (SSO، احراز چندعاملی، مدیریت کاربر) برای وب‌اپ و API | IAM, OAuth2, OpenID Connect | https://github.com/keycloak/keycloak |
+| Ory Hydra | سرور OAuth2/OIDC متن‌باز برای صدور توکن و جلوگیری از جعل هویت | Go, OAuth2, OpenID Connect | https://github.com/ory/hydra |
+
+---
+
+## زنجیره تأمین و اصالت کالا (Supply Chain & Anti-Counterfeiting)
+پروژه‌هایی که **مسیر کالا یا داده** را شفاف و قابل‌ردیابی ثبت می‌کنند تا از تقلب جلوگیری شود.
+
+| نام پروژه | توضیح کوتاه | فناوری | لینک |
+| --- | --- | --- | --- |
+| Hyperledger Food Supply Chain | راهکار زنجیره تأمین مواد غذایی روی Hyperledger Fabric برای ردیابی منشأ محصول | Hyperledger Fabric | https://github.com/AleRapchan/hyperledger-supply-chain |
+| Hyperledger Grid | پلتفرم ماژولار برای مدیریت زنجیره تأمین و اصالت دارایی‌ها روی بلاک‌چین | Hyperledger Sawtooth, Rust | https://github.com/hyperledger/grid |
+| OriginTrail DKG Client | کتابخانه برای تعامل با Decentralized Knowledge Graph و مدیریت دارایی‌های دانشی | JS SDK, DKG | https://github.com/OriginTrail/dkg-client |
+| OriginTrail Node (OT Node) | نود شبکه OriginTrail برای ساخت «گراف دانش غیرمتمرکز» و داده‌های قابل‌اعتماد | DKG, Web3, Blockchain | https://github.com/OriginTrail/ot-node |
+| Pharma Supply Chain (Fabric) | پیاده‌سازی زنجیره تأمین دارو با Hyperledger Fabric برای ردیابی و جلوگیری از تقلب | Hyperledger Fabric | https://github.com/spike-spiegel-21/blockchain-supply-chain |
+| Supply Chain using Hyperledger Fabric & React | نمونه سیستم زنجیره تأمین با تمرکز بر ردیابی و احراز اصالت و رابط React | Hyperledger Fabric, React | https://github.com/kuldeep23907/Supply-Chain-using-Hyperledger-Fabric-and-React |
+
+---
+
+## تشخیص رسانه جعلی و دیپ‌فیک (Media & Deepfake Detection)
+پروژه‌هایی برای **تشخیص ویدئو و تصویر جعلی (دیپ‌فیک)** و تحلیل رسانه.
+
+| نام پروژه | کاربرد | مدل/تکنیک | لینک |
+| --- | --- | --- | --- |
+| Awesome Deepfakes Detection | فهرست مرجع مقالات و ابزارهای تشخیص دیپ‌فیک (منبع پژوهشی) | Survey, Awesome List | https://github.com/Daisy-Zhang/Awesome-Deepfakes-Detection |
+| DeepSafe | پلتفرم وب Streamlit برای تشخیص دیپ‌فیک روی تصویر و ویدئو | Streamlit, Python, Docker | https://github.com/siddharthksah/DeepSafe |
+| Deepfake Detection using Deep Learning | تشخیص دیپ‌فیک ویدئو با ترکیب ResNext و LSTM (ویژگی + توالی زمانی) | ResNext CNN, LSTM, PyTorch | https://github.com/abhijithjadhav/Deepfake_detection_using_deep_learning |
+| DeepfakeDetector | سامانه تشخیص دیپ‌فیک با EfficientNet-B0 و رابط وب کاربرپسند | EfficientNet-B0, PyTorch, Web UI | https://github.com/TRahulsingh/DeepfakeDetector |
+| FaceForensics++ | دیتاست و کد تشخیص چهره دستکاری‌شده برای سنجش سامانه‌های ضد دیپ‌فیک | Dataset, Forensics | https://github.com/ondyari/FaceForensics |
+
+---
+
+## کتابخانه‌ها و ابزارهای رمزنگاری (Crypto Libraries & Tools)
+زیرساخت لازم برای **امضای دیجیتال، هش، TLS و رمزنگاری** که هسته‌ی سیستم‌های ضدجعل هستند.
+
+| نام پروژه | کاربرد | زبان/حوزه | لینک |
+| --- | --- | --- | --- |
+| libsodium | کتابخانه‌ی مدرن و ساده برای رمزنگاری، امضا، هش و مدیریت کلید | C (با بایندینگ‌های متعدد) | https://github.com/jedisct1/libsodium |
+| OpenSSL | تولکیت کامل SSL/TLS و رمزنگاری، زیرساخت اکثر ارتباطات امن وب (HTTPS) | C, TLS/SSL | https://github.com/openssl/openssl |
+| Tink | کتابخانه چندزبانه گوگل برای رمزنگاری متقارن/نامتقارن و امضای دیجیتال با API امن | Go, Java, Python | https://github.com/google/tink |
+
+---
+
+## موارد استفاده (Use Cases)
+نمونه سناریوهایی که این فهرست برای آن‌ها مفید است:
+
+- **صدور گواهی دانشگاهی مقاوم در برابر جعل:** از Blockcerts (cert-issuer) یا OpenAttestation/OpenCerts برای صدور گواهی و EtherDocs برای مدیریت مدارک استفاده کنید.
+- **احراز هویت امن در وب و API:** Keycloak یا Authelia را برای SSO و MFA به‌کار ببرید؛ برای شناسه‌های غیرمتمرکز، پروژه‌های DID مناسب‌اند.
+- **رهگیری اصالت دارو و کالا:** Hyperledger Fabric نمونه‌های Supply Chain، OriginTrail و Grid برای ردیابی و اثبات منشاء.
+- **تشخیص ویدئوهای دستکاری‌شده:** DeepfakeDetector یا DeepSafe را برای پیاده‌سازی سرویس تشخیص، و FaceForensics++ را برای داده آموزشی به‌کار گیرید.
+- **لایه رمزنگاری استاندارد:** Tink، OpenSSL یا libsodium را به‌عنوان هسته امضا، هش و TLS در سرویس‌های ضدجعل قرار دهید.
+
+---
+
+## نحوه استفاده از این لیست
+- از بخش مرتبط با مسئله‌ی خود شروع کنید و پروژه‌های متناظر را بررسی کنید.
+- لینک‌ها مستقیم به ریپوهای اوپن‌سورس هستند؛ قبل از استفاده، README و لایسنس هر ریپو را بخوانید.
+- اگر URLی در دسترس نبود، در Issue ها گزارش دهید تا به‌روز شود.
+
+---
+
+## مشارکت در توسعه
+- برای افزودن پروژه جدید، نام و لینک را به جدول بخش مرتبط اضافه کنید و یک ورودی کامل در `projects.json` (شامل `github`، `license`، `tags`) بسازید.
+- قوانین دقیق فرمت و دسته‌بندی در [CONTRIBUTING.md](CONTRIBUTING.md) و [docs/SCHEMA.md](docs/SCHEMA.md) آمده است.
+- برای گزارش لینک خراب یا داده نادرست، از قالب Issue آماده در مخزن استفاده کنید.
+
+---
 
 ## لایسنس
-این فهرست تحت مجوز [MIT](LICENSE) منتشر شده است.
+محتوای این مخزن تحت لایسنس **MIT** منتشر شده است. لطفاً برای جزئیات، فایل `LICENSE` را ببینید.
