@@ -1,155 +1,155 @@
 [
   {
-    "name": "Authelia",
-    "github": "authelia/authelia",
-    "url": "https://github.com/authelia/authelia",
-    "category": "identity",
-    "description": "SSO portal and 2FA-capable reverse proxy to protect web applications.",
-    "tags": ["sso", "2fa", "zero-trust"],
-    "license": null
-  },
-  {
     "name": "Blockcerts",
     "github": "blockchain-certificates/cert-issuer",
     "url": "https://github.com/blockchain-certificates/cert-issuer",
     "category": "certificates",
-    "description": "Open standard and tools for blockchain-based certificates and credentials.",
-    "tags": ["blockchain", "credentials", "verification"],
-    "license": null
+    "description": "استاندارد و ابزارهای صدور و اعتبارسنجی گواهی بلاک‌چینی.",
+    "tags": ["blockchain", "json-ld", "credentials"],
+    "license": "MIT"
   },
   {
     "name": "Credential Handler Polyfill",
     "github": "digitalbazaar/credential-handler-polyfill",
     "url": "https://github.com/digitalbazaar/credential-handler-polyfill",
     "category": "certificates",
-    "description": "Polyfill for W3C Verifiable Credential wallets to issue and verify digital credentials.",
+    "description": "پیاده‌سازی Polyfill برای کیف‌پول Verifiable Credential و تعامل با صادرکننده/اعتبارسنج.",
     "tags": ["verifiable-credentials", "wallet", "web"],
-    "license": null
-  },
-  {
-    "name": "DFDC Deepfake Challenge",
-    "github": "selimsef/dfdc_deepfake_challenge",
-    "url": "https://github.com/selimsef/dfdc_deepfake_challenge",
-    "category": "media_forensics",
-    "description": "Training and inference pipeline for the Facebook Deepfake Detection Challenge dataset.",
-    "tags": ["deepfake", "detection", "computer-vision"],
-    "license": null
-  },
-  {
-    "name": "FaceForensics",
-    "github": "ondyari/FaceForensics",
-    "url": "https://github.com/ondyari/FaceForensics",
-    "category": "media_forensics",
-    "description": "Dataset and benchmark code for detecting manipulated face videos and images.",
-    "tags": ["deepfake", "dataset", "forensics"],
-    "license": null
-  },
-  {
-    "name": "Google Tink",
-    "github": "google/tink",
-    "url": "https://github.com/google/tink",
-    "category": "library",
-    "description": "Multi-language cryptography SDK with safe defaults for signing and encryption.",
-    "tags": ["cryptography", "encryption", "signing"],
-    "license": null
-  },
-  {
-    "name": "Hyperledger Grid",
-    "github": "hyperledger/grid",
-    "url": "https://github.com/hyperledger/grid",
-    "category": "supply_chain",
-    "description": "Framework for supply-chain data models, product catalogs, and provenance.",
-    "tags": ["hyperledger", "traceability", "blockchain"],
-    "license": null
-  },
-  {
-    "name": "in-toto",
-    "github": "in-toto/in-toto",
-    "url": "https://github.com/in-toto/in-toto",
-    "category": "supply_chain",
-    "description": "Framework to secure software supply chains with signed step metadata and layout verification.",
-    "tags": ["supply-chain", "signing", "verification"],
-    "license": null
-  },
-  {
-    "name": "Keycloak",
-    "github": "keycloak/keycloak",
-    "url": "https://github.com/keycloak/keycloak",
-    "category": "identity",
-    "description": "Identity and access management with SSO, brokering, and fine-grained authorization.",
-    "tags": ["iam", "sso", "oauth2"],
-    "license": null
-  },
-  {
-    "name": "libsodium",
-    "github": "jedisct1/libsodium",
-    "url": "https://github.com/jedisct1/libsodium",
-    "category": "library",
-    "description": "Modern, easy-to-use cryptographic library for signatures, encryption, and hashing.",
-    "tags": ["cryptography", "signing", "encryption"],
-    "license": null
+    "license": "BSD-3-Clause"
   },
   {
     "name": "Open Badges Validator Core",
     "github": "IMSGlobal/openbadges-validator-core",
     "url": "https://github.com/IMSGlobal/openbadges-validator-core",
     "category": "certificates",
-    "description": "Validator for IMS Open Badges to check badge authenticity and structure.",
-    "tags": ["badges", "verification", "education"],
-    "license": null
+    "description": "اعتبارسنجی ساختار و امضای Open Badges برای گواهی‌های آموزشی.",
+    "tags": ["open-badges", "validation", "education"],
+    "license": "Apache-2.0"
   },
   {
-    "name": "OpenSSL",
-    "github": "openssl/openssl",
-    "url": "https://github.com/openssl/openssl",
-    "category": "library",
-    "description": "TLS/SSL toolkit and general-purpose cryptography library.",
-    "tags": ["tls", "ssl", "cryptography"],
-    "license": null
+    "name": "Authelia",
+    "github": "authelia/authelia",
+    "url": "https://github.com/authelia/authelia",
+    "category": "identity",
+    "description": "پرتال SSO با 2FA و کنترل دسترسی معکوس برای اپلیکیشن‌های وب.",
+    "tags": ["sso", "2fa", "reverse-proxy"],
+    "license": "Apache-2.0"
   },
   {
-    "name": "OriginTrail",
-    "github": "OriginTrail/ot-node",
-    "url": "https://github.com/OriginTrail/ot-node",
-    "category": "supply_chain",
-    "description": "Decentralized knowledge graph for product traceability and authenticity proofs.",
-    "tags": ["traceability", "blockchain", "supply-chain"],
-    "license": null
+    "name": "Keycloak",
+    "github": "keycloak/keycloak",
+    "url": "https://github.com/keycloak/keycloak",
+    "category": "identity",
+    "description": "سیستم مدیریت هویت با SSO، فدراسیون و سیاست‌های دسترسی.",
+    "tags": ["oauth2", "oidc", "saml"],
+    "license": "Apache-2.0"
   },
   {
     "name": "privacyIDEA",
     "github": "privacyidea/privacyidea",
     "url": "https://github.com/privacyidea/privacyidea",
     "category": "identity",
-    "description": "Multi-factor authentication and policy engine for diverse tokens and workflows.",
-    "tags": ["mfa", "authentication", "tokens"],
-    "license": null
+    "description": "سامانه MFA و موتور سیاست برای توکن‌های متنوع و گردش‌های احراز هویت.",
+    "tags": ["mfa", "policy-engine", "tokens"],
+    "license": "AGPL-3.0"
   },
   {
-    "name": "Python TUF",
-    "github": "theupdateframework/python-tuf",
-    "url": "https://github.com/theupdateframework/python-tuf",
-    "category": "library",
-    "description": "Reference implementation of The Update Framework for secure software updates.",
-    "tags": ["tuf", "updates", "signing"],
-    "license": null
+    "name": "Hyperledger Grid",
+    "github": "hyperledger/grid",
+    "url": "https://github.com/hyperledger/grid",
+    "category": "supply_chain",
+    "description": "چارچوب مدل‌داده و قرارداد هوشمند برای شفافیت زنجیره تأمین.",
+    "tags": ["hyperledger", "sawtooth", "smart-contracts"],
+    "license": "Apache-2.0"
+  },
+  {
+    "name": "in-toto",
+    "github": "in-toto/in-toto",
+    "url": "https://github.com/in-toto/in-toto",
+    "category": "supply_chain",
+    "description": "امضای متادیتا و اعتبارسنجی چیدمان جهت امنیت زنجیره عرضه نرم‌افزار.",
+    "tags": ["supply-chain", "signing", "verification"],
+    "license": "Apache-2.0"
+  },
+  {
+    "name": "OriginTrail",
+    "github": "OriginTrail/ot-node",
+    "url": "https://github.com/OriginTrail/ot-node",
+    "category": "supply_chain",
+    "description": "گراف دانش غیرمتمرکز برای رهگیری کالا و اثبات اصالت.",
+    "tags": ["blockchain", "dkg", "traceability"],
+    "license": "GPL-3.0"
   },
   {
     "name": "Sigstore Cosign",
     "github": "sigstore/cosign",
     "url": "https://github.com/sigstore/cosign",
     "category": "supply_chain",
-    "description": "Container signing and verification to prove software origin and integrity.",
-    "tags": ["signing", "supply-chain", "containers"],
-    "license": null
+    "description": "امضای کانتینر و آرتیفکت برای اثبات منشاء و تمامیت بسته‌های نرم‌افزاری.",
+    "tags": ["sigstore", "container-signing", "slsa"],
+    "license": "Apache-2.0"
+  },
+  {
+    "name": "DFDC Deepfake Challenge",
+    "github": "selimsef/dfdc_deepfake_challenge",
+    "url": "https://github.com/selimsef/dfdc_deepfake_challenge",
+    "category": "media_forensics",
+    "description": "پیاده‌سازی آموزش و استنتاج روی دیتاست DFDC برای تشخیص دیپ‌فیک ویدئویی.",
+    "tags": ["cnn", "video-ml", "deepfake-detection"],
+    "license": "MIT"
+  },
+  {
+    "name": "FaceForensics",
+    "github": "ondyari/FaceForensics",
+    "url": "https://github.com/ondyari/FaceForensics",
+    "category": "media_forensics",
+    "description": "دیتاست و کد بنچمارک برای تشخیص چهره‌های دستکاری‌شده.",
+    "tags": ["forensics", "dataset", "cnn"],
+    "license": "MIT"
+  },
+  {
+    "name": "Google Tink",
+    "github": "google/tink",
+    "url": "https://github.com/google/tink",
+    "category": "library",
+    "description": "SDK چندزبانه رمزنگاری با پیش‌فرض‌های ایمن برای امضا و رمزنگاری.",
+    "tags": ["cryptography", "encryption", "signing"],
+    "license": "Apache-2.0"
+  },
+  {
+    "name": "libsodium",
+    "github": "jedisct1/libsodium",
+    "url": "https://github.com/jedisct1/libsodium",
+    "category": "library",
+    "description": "کتابخانه رمزنگاری سطح‌سیستم برای امضا، رمزنگاری و هش.",
+    "tags": ["cryptography", "encryption", "signing"],
+    "license": "ISC"
+  },
+  {
+    "name": "OpenSSL",
+    "github": "openssl/openssl",
+    "url": "https://github.com/openssl/openssl",
+    "category": "library",
+    "description": "جعبه‌ابزار TLS/SSL و رمزنگاری عمومی برای شبکه و فایل.",
+    "tags": ["tls", "ssl", "cryptography"],
+    "license": "Apache-2.0"
+  },
+  {
+    "name": "Python TUF",
+    "github": "theupdateframework/python-tuf",
+    "url": "https://github.com/theupdateframework/python-tuf",
+    "category": "library",
+    "description": "مرجع The Update Framework برای مدیریت به‌روزرسانی امن بسته‌ها.",
+    "tags": ["tuf", "updates", "signing"],
+    "license": "Apache-2.0"
   },
   {
     "name": "YubiKey libfido2",
     "github": "Yubico/libfido2",
     "url": "https://github.com/Yubico/libfido2",
     "category": "library",
-    "description": "FIDO2/WebAuthn library for authenticators and security keys.",
+    "description": "کتابخانه FIDO2/WebAuthn برای احراز هویت سخت‌افزاری.",
     "tags": ["fido2", "webauthn", "hardware"],
-    "license": null
+    "license": "BSD-2-Clause"
   }
 ]
