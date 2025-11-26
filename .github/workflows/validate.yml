@@ -22,6 +22,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
+      - name: Lint JSON syntax
+        run: python -m json.tool projects.json > /tmp/projects.json
+
+      - name: Validate schema and duplicates
+        run: python scripts/validate_projects.py
+
       - name: Validate projects.json
         run: |
           python scripts/validate_projects.py --check-urls --timeout 5.0
